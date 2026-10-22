@@ -1,1 +1,17 @@
-{"schemaVersion":1,"product":"CtrlOne Intelligence Ai+","channel":"manual-test","buildFlavor":"unsigned-lab","manualOnly":true,"architecture":"x64","version":"1.3.571","sourceCommit":"b991d9b91a2185ac6d6347777119069303b6bf94","artifactCommit":"ef12169c6ce367078c59a07b29efee884a396446","msiUrl":"https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/ef12169c6ce367078c59a07b29efee884a396446/CtrlOne-Setup-UNSIGNED-LAB-v1.3.571.msi","sha256":"3c0a4b6186b8b28ba1ef83bff16d079de8cdfc8200111dff51ae9accd272ee65","sizeBytes":28930048,"setupUrl":"https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/ef12169c6ce367078c59a07b29efee884a396446/CtrlOne-Setup-UNSIGNED-LAB.exe","setupSha256":"4a8c57c5a8153f4cf64c7d4904980b21babc75eb7c22d6c07d81fa3606d3e65e","setupSizeBytes":38389248}
+{
+  "schemaVersion": 1,
+  "product": "CtrlOne Intelligence Ai+",
+  "channel": "manual-test",
+  "buildFlavor": "unsigned-lab",
+  "manualOnly": true,
+  "architecture": "x64",
+  "version": "1.3.573",
+  "sourceCommit": "ba8e7aae1fe49c08d61cd193a50daf7002a34334",
+  "artifactCommit": "3fb475a55938f16184b81ec7b3358da33794d4c5",
+  "msiUrl": "https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/3fb475a55938f16184b81ec7b3358da33794d4c5/CtrlOne-Setup-UNSIGNED-LAB-v1.3.573.msi",
+  "sha256": "b6ddfb75b5109a62a487fb908dd4b86691d3161c72a04b804b7612bfd75730c3",
+  "sizeBytes": 28921856,
+  "setupUrl": "https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/3fb475a55938f16184b81ec7b3358da33794d4c5/CtrlOne-Setup-UNSIGNED-LAB.exe",
+  "setupSha256": "74633e6a4d22dd9be1db552833f6a65dd8b3df19beb2d52044f401f49252fa62",
+  "setupSizeBytes": 38400000
+}
