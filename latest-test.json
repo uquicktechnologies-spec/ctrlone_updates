@@ -5,13 +5,13 @@
   "buildFlavor": "unsigned-lab",
   "manualOnly": true,
   "architecture": "x64",
-  "version": "1.3.579",
-  "sourceCommit": "a9d50c452dbd710b4aa2af980431b612d0015b85",
-  "artifactCommit": "c9e87abda71348ace19f38cf66073cc4ab7798f7",
-  "msiUrl": "https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/c9e87abda71348ace19f38cf66073cc4ab7798f7/CtrlOne-Setup-UNSIGNED-LAB-v1.3.579.msi",
-  "sha256": "2d4d09d03cc59ebf9f599cfbae9d43799d34b8ed4dffa967e86f7b7041774cf3",
-  "sizeBytes": 29097984,
-  "setupUrl": "https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/c9e87abda71348ace19f38cf66073cc4ab7798f7/CtrlOne-Setup-UNSIGNED-LAB.exe",
-  "setupSha256": "181aff08d93fe737749f71935fe3628c11bdbf1fdd585e1076fa43b758f2f2b3",
-  "setupSizeBytes": 38585344
+  "version": "1.3.580",
+  "sourceCommit": "538e1b5fb448cccd657eb2a890458bd21a5b7c82",
+  "artifactCommit": "8615f3132158243d472fb015ce7e61b1863820e6",
+  "msiUrl": "https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/8615f3132158243d472fb015ce7e61b1863820e6/CtrlOne-Setup-UNSIGNED-LAB-v1.3.580.msi",
+  "sha256": "f476e5a5fb286e83984631fce4a3cea89da078e33779139163c2189e7cd36d0e",
+  "sizeBytes": 29122560,
+  "setupUrl": "https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/8615f3132158243d472fb015ce7e61b1863820e6/CtrlOne-Setup-UNSIGNED-LAB.exe",
+  "setupSha256": "e4c3f56932f47c281a0c7e944729bb00758b29b5312d05eaef79587a903b56b8",
+  "setupSizeBytes": 38589440
 }

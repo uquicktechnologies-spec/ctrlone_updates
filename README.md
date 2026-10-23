@@ -2,13 +2,17 @@
 
 Public test installers for CtrlOne Intelligence Ai+.
 
-## Latest explicit test update: 1.3.579
+## Latest explicit test update: 1.3.580
 
-- [Download test MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.579.msi)
+- [Download test MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.580.msi)
 - [Download test Setup EXE](./CtrlOne-Setup-UNSIGNED-LAB.exe)
 - [SHA256 checksums](./SHA256SUMS.txt)
 
 These are **unsigned lab packages for testing**. Windows may ask for approval.
+
+Version 1.3.580 fixes the Agent Console's saved-PC selection mismatch and requires the current PC's live control state before enabling restriction edits. Delayed clicks and state reads are rejected after a PC, tenant, server or session change. Local agent reads remain available while Windows reports no internet. Pending command receipts can still be observed after relaunch, without replaying old drafts or retry requests. Diagnostic toggle-history collection also uses its bounded, authenticated endpoint.
+
+The 2,553 Agent Console tests and all applicable source CI checks passed. Live VMware Registry Editor and Control Panel/Settings ON/OFF acceptance is still pending for this build.
 
 Version 1.3.579 fixes Registry Editor OFF verification and recovery of recorded original values, resumes eligible interrupted Control Panel restores, and uses the current protection provider during startup. Support-bundle uploads now use the existing device-bound authentication for the exact diagnostics endpoint. Unknown ownership, changed policy values, server/device mismatches and foreign policies still stop recovery rather than being overwritten.
 
@@ -34,9 +38,11 @@ The catalog is [latest-test.json](./latest-test.json); its installer URLs pin an
 
 Source regression tests and applicable source checks passed. Live connection, authentication, installation, upgrade and sustained performance acceptance remain unverified.
 
-Build source: `a273fef8c35363d14e71fdf7959a73197bbfd938`.
+Build source: `538e1b5fb448cccd657eb2a890458bd21a5b7c82` ([source fix](https://github.com/uquicktechnologies-spec/CtrlOne_Final/pull/107)).
 
 ## Previous manual tests
+
+- 1.3.579: [MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.579.msi), [original Setup EXE](https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/c9e87abda71348ace19f38cf66073cc4ab7798f7/CtrlOne-Setup-UNSIGNED-LAB.exe), [original checksums](https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/c9e87abda71348ace19f38cf66073cc4ab7798f7/SHA256SUMS.txt).
 
 - 1.3.577: [MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.577.msi), [original Setup EXE](https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/d0db9f90433d70528c952e511075b2afab5abbfd/CtrlOne-Setup-UNSIGNED-LAB.exe), [original checksums](https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/d0db9f90433d70528c952e511075b2afab5abbfd/SHA256SUMS.txt).
 
