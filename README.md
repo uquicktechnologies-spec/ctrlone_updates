@@ -2,15 +2,19 @@
 
 Public test installers for CtrlOne Intelligence Ai+.
 
-## Latest explicit test update: 1.3.578
+## Latest explicit test update: 1.3.579
 
-- [Download test MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.578.msi)
+- [Download test MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.579.msi)
 - [Download test Setup EXE](./CtrlOne-Setup-UNSIGNED-LAB.exe)
 - [SHA256 checksums](./SHA256SUMS.txt)
 
 These are **unsigned lab packages for testing**. Windows may ask for approval.
 
-Version 1.3.578 fixes wallpaper downloads for PCs that use a stored legacy device token. Downloads retain device and server credential binding, refuse redirects, validate the image digest, and reject results if enrollment changes during the download. The server also rechecks current device access before serving the image. Installing this package does not restore retired devices or change administrator access. Live wallpaper application requires a new deployment after upgrading and has not yet been verified.
+Version 1.3.579 fixes Registry Editor OFF verification and recovery of recorded original values, resumes eligible interrupted Control Panel restores, and uses the current protection provider during startup. Support-bundle uploads now use the existing device-bound authentication for the exact diagnostics endpoint. Unknown ownership, changed policy values, server/device mismatches and foreign policies still stop recovery rather than being overwritten.
+
+The code regressions and complete applicable CI checks passed. Installation and restriction ON/OFF behavior still require validation on the test PC; the initial cause of policy values changing on the affected PC is not established by this build.
+
+Version 1.3.578 fixes wallpaper downloads for PCs that use a stored legacy device token. Downloads retain device and server credential binding, refuse redirects, validate the image digest, and reject results if enrollment changes during the download. The server also rechecks current device access before serving the image. Installing this package does not restore retired devices or change administrator access. Wallpaper application should be checked with a new deployment after upgrading.
 
 Version 1.3.577 requires current local enrollment proof before showing Enrolled, keeps an enrollment refusal visible during refresh, and confirms native persistence before committing a retry. Delayed retry writes are guarded against a changed server, PC, credential, enrollment generation or service restart. Repair requires an authenticated heartbeat for the same current registration. Administrator retirement and revocation are preserved; installing this update does not restore a retired PC automatically.
 
