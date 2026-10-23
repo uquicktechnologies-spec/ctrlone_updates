@@ -2,13 +2,15 @@
 
 Public test installers for CtrlOne Intelligence Ai+.
 
-## Latest explicit test update: 1.3.577
+## Latest explicit test update: 1.3.578
 
-- [Download test MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.577.msi)
+- [Download test MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.578.msi)
 - [Download test Setup EXE](./CtrlOne-Setup-UNSIGNED-LAB.exe)
 - [SHA256 checksums](./SHA256SUMS.txt)
 
 These are **unsigned lab packages for testing**. Windows may ask for approval.
+
+Version 1.3.578 fixes wallpaper downloads for PCs that use a stored legacy device token. Downloads retain device and server credential binding, refuse redirects, validate the image digest, and reject results if enrollment changes during the download. The server also rechecks current device access before serving the image. Installing this package does not restore retired devices or change administrator access. Live wallpaper application requires a new deployment after upgrading and has not yet been verified.
 
 Version 1.3.577 requires current local enrollment proof before showing Enrolled, keeps an enrollment refusal visible during refresh, and confirms native persistence before committing a retry. Delayed retry writes are guarded against a changed server, PC, credential, enrollment generation or service restart. Repair requires an authenticated heartbeat for the same current registration. Administrator retirement and revocation are preserved; installing this update does not restore a retired PC automatically.
 
@@ -28,9 +30,11 @@ The catalog is [latest-test.json](./latest-test.json); its installer URLs pin an
 
 Source regression tests and applicable source checks passed. Live connection, authentication, installation, upgrade and sustained performance acceptance remain unverified.
 
-Build source: `33c5f969c0010f5cd22537a497a9b0046d9e39de`.
+Build source: `a273fef8c35363d14e71fdf7959a73197bbfd938`.
 
 ## Previous manual tests
+
+- 1.3.577: [MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.577.msi), [original Setup EXE](https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/d0db9f90433d70528c952e511075b2afab5abbfd/CtrlOne-Setup-UNSIGNED-LAB.exe), [original checksums](https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/d0db9f90433d70528c952e511075b2afab5abbfd/SHA256SUMS.txt).
 
 - 1.3.576: [MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.576.msi), [original Setup EXE](https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/dd11c47c2aad298f5663de650401b364a5491173/CtrlOne-Setup-UNSIGNED-LAB.exe), [original checksums](https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/dd11c47c2aad298f5663de650401b364a5491173/SHA256SUMS.txt).
 
