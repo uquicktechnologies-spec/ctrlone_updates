@@ -2,45 +2,26 @@
 
 Public test installers for CtrlOne Intelligence Ai+.
 
-## Latest explicit test update: 1.3.580
+## Latest explicit test update: 1.3.587
 
-- [Download test MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.580.msi)
-- [Download test Setup EXE](./CtrlOne-Setup-UNSIGNED-LAB.exe)
+- [Download test MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.587.msi)
+- [Download versioned test Setup EXE](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.587.exe)
+- [Download current test Setup EXE](./CtrlOne-Setup-UNSIGNED-LAB.exe)
 - [SHA256 checksums](./SHA256SUMS.txt)
 
 These are **unsigned lab packages for testing**. Windows may ask for approval.
 
-Version 1.3.580 fixes the Agent Console's saved-PC selection mismatch and requires the current PC's live control state before enabling restriction edits. Delayed clicks and state reads are rejected after a PC, tenant, server or session change. Local agent reads remain available while Windows reports no internet. Pending command receipts can still be observed after relaunch, without replaying old drafts or retry requests. Diagnostic toggle-history collection also uses its bounded, authenticated endpoint.
+This build fixes false wallpaper “Applied” confirmations from an old registry path. A fresh user-session operation must finish successfully, retain the same selected logon, and pass image-policy checks. Recognized prior deployment image policies are prepared before applying the new image. Independent restrictions and foreign wallpaper policies remain protected. The source also includes the Admin Console authentication fix; that change requires a separate server deployment. The installer retains verified Desktop MSI download and Windows Installer handoff.
 
-The 2,553 Agent Console tests and all applicable source CI checks passed. Live VMware Registry Editor and Control Panel/Settings ON/OFF acceptance is still pending for this build.
+All eight applicable source CI workflows passed, including the new wallpaper regression groups and six server wallpaper contracts. Package byte checks do not establish rendered desktop pixels or a completed live upgrade. Retest wallpaper deployment on the VMware PC after installing.
 
-Version 1.3.579 fixes Registry Editor OFF verification and recovery of recorded original values, resumes eligible interrupted Control Panel restores, and uses the current protection provider during startup. Support-bundle uploads now use the existing device-bound authentication for the exact diagnostics endpoint. Unknown ownership, changed policy values, server/device mismatches and foreign policies still stop recovery rather than being overwritten.
+Check for Update reads [latest-test.json](./latest-test.json). A newer test build offers an explicit download and install action using commit-pinned MSI bytes. Windows attachment security, antivirus, SmartScreen and administrator approval remain active. The signed SYSTEM/daily customer updater is separate; this catalog does not authorize unattended unsigned customer updates.
 
-The code regressions and complete applicable CI checks passed. Installation and restriction ON/OFF behavior still require validation on the test PC; the initial cause of policy values changing on the affected PC is not established by this build.
-
-Version 1.3.578 fixes wallpaper downloads for PCs that use a stored legacy device token. Downloads retain device and server credential binding, refuse redirects, validate the image digest, and reject results if enrollment changes during the download. The server also rechecks current device access before serving the image. Installing this package does not restore retired devices or change administrator access. Wallpaper application should be checked with a new deployment after upgrading.
-
-Version 1.3.577 requires current local enrollment proof before showing Enrolled, keeps an enrollment refusal visible during refresh, and confirms native persistence before committing a retry. Delayed retry writes are guarded against a changed server, PC, credential, enrollment generation or service restart. Repair requires an authenticated heartbeat for the same current registration. Administrator retirement and revocation are preserved; installing this update does not restore a retired PC automatically.
-
-Version 1.3.576 reports registration storage failures before confirming registration and prevents a delayed license-lock update within the same agent process from replacing a newer registration. Connection repair separates authenticated heartbeat confirmation from local report queue status and discards results after the selected server, device or session changes. A locally unconfirmed enrollment immediately removes an older Online observation. Empty or unreadable V2 credentials remain unconfirmed; retired or revoked PCs still require administrator action.
-
-Version 1.3.575 retries an identical installer-result acknowledgement without launching Windows Installer again, handles bounded Windows connection-table growth, and shows a specific Windows failure stage and error code when available. An unconfirmed handoff blocks the same retained request while its bounded in-memory record exists; this safeguard does not persist across service restart or history eviction. Affected older builds may need the direct MSI for their first upgrade because their installed helper is unchanged until the new build is installed.
-
-Version 1.3.574 fixes legacy registration-token handling and distinguishes a local credential read or binding failure from a management server rejection. A pending registration stays unconfirmed while the console observes the agent's result. Existing V2 enrollment authority, server identity checks and administrator revocation remain in force. This update does not silently reset credentials or migrate a PC to another server.
-
-The two management domains must not be assumed to be aliases: separate server installations require registration with the intended server. Use the server origin, such as `https://ctrlone.rossarimail.com`, in the connection settings; return to that server's Admin Console after registration succeeds.
-
-An equal installed version is shown as up to date. A validated newer version shows a green **Update Available** action. Clicking that action downloads and verifies the pinned MSI and opens Windows Installer in the initiating user's normal Windows session. Completing an availability check alone does not start installation. “Windows Installer opened” confirms handoff; complete the installer to finish upgrading.
-
-CtrlOne's unsigned-package confirmation does not block this explicit test action. Windows continues to apply its configured attachment security, antivirus, SmartScreen and administrator approval policies. The signed SYSTEM/daily automatic updater remains separate; this catalog does not authorize unattended unsigned customer updates. Successfully handed-off normal-user MSI sources remain available for Windows Installer.
-
-The catalog is [latest-test.json](./latest-test.json); its installer URLs pin an immutable Git commit. The separate PC status popup remains independent of update progress.
-
-Source regression tests and applicable source checks passed. Live connection, authentication, installation, upgrade and sustained performance acceptance remain unverified.
-
-Build source: `538e1b5fb448cccd657eb2a890458bd21a5b7c82` ([source fix](https://github.com/uquicktechnologies-spec/CtrlOne_Final/pull/107)).
+Build source: `bfcf67aad1c59effa37cc0e8b36bc16856556a76` ([source fix](https://github.com/uquicktechnologies-spec/CtrlOne_Final/pull/113)).
 
 ## Previous manual tests
+
+- 1.3.586: [MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.586.msi), [versioned Setup EXE](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.586.exe), [original checksums](https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/b305f3ba96459b0f5670da0e60fdd846c4627068/SHA256SUMS.txt).
 
 - 1.3.579: [MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.579.msi), [original Setup EXE](https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/c9e87abda71348ace19f38cf66073cc4ab7798f7/CtrlOne-Setup-UNSIGNED-LAB.exe), [original checksums](https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/c9e87abda71348ace19f38cf66073cc4ab7798f7/SHA256SUMS.txt).
 
