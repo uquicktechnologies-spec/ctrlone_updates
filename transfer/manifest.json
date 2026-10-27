@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "version": "1.3.589",
+  "repository": "uquicktechnologies-spec/ctrlone_updates",
+  "baseCommit": "6a79ae0476a33db705a94000c1fc233cd0b05991",
+  "baseTree": "bd521f2674b64fd18d2fc15c9467938646e4e971",
+  "sourceCommit": "68a56c3ca87e6c1cca7dd0dbd6e2c8e53a9797eb",
+  "files": [
+    {
+      "path": "CtrlOne-Setup-UNSIGNED-LAB-v1.3.589.msi",
+      "bytes": 29188096,
+      "sha256": "ded8d950d7e1e770c767d39b5e441ec37e25a482fe8b0bac0f659b476220dc7b",
+      "gitBlob": "33b6e5fe309cc4f862b25831740e41868b6e0f0d",
+      "chunks": [
+        {
+          "path": "transfer/chunks/msi-000.bin",
+          "bytes": 4194304,
+          "sha256": "50b95d6a33b37d5d711348dcc75a369a53eff2106b99f3847e5238a86052ceca",
+          "gitBlob": "d61aa7c555a2a307c1ee2bf437e121134b65aa86",
+          "file": "CtrlOne-Setup-UNSIGNED-LAB-v1.3.589.msi",
+          "offset": 0
+        },
+        {
+          "path": "transfer/chunks/msi-001.bin",
+          "bytes": 4194304,
+          "sha256": "390d6306532892a9af2046d38ecd125d6d2e33799ae765009ff65e46f172ff4d",
+          "gitBlob": "14830c42cd490435adc2719c4642d5812aebc1d8",
+          "file": "CtrlOne-Setup-UNSIGNED-LAB-v1.3.589.msi",
+          "offset": 4194304
+        },
+        {
+          "path": "transfer/chunks/msi-002.bin",
+          "bytes": 4194304,
+          "sha256": "5383bc21e13e5e5311329089e27f50f9bb3bd861d5ce1548fa7a42941391bbae",
+          "gitBlob": "fb983f762537df900e6e90c2c81b88ea6f638685",
+          "file": "CtrlOne-Setup-UNSIGNED-LAB-v1.3.589.msi",
+          "offset": 8388608
+        },
+        {
+          "path": "transfer/chunks/msi-003.bin",
+          "bytes": 4194304,
+          "sha256": "dac42107837cc0d2ccb430bee57801d01b25137301c84e591d343ccca2796841",
+          "gitBlob": "fdaa544034985b2672310868e7b90151f56f292c",
+          "file": "CtrlOne-Setup-UNSIGNED-LAB-v1.3.589.msi",
+          "offset": 12582912
+        },
+        {
+          "path": "transfer/chunks/msi-004.bin",
+          "bytes": 4194304,
+          "sha256": "32cb494ed47de587ebaaf7e3904563e3e49c6b03743eed3eebbf51ae5c464417",
+          "gitBlob": "bf3142197fa4c5dfd2e8edc2da8d947c1a8153bf",
+          "file": "CtrlOne-Setup-UNSIGNED-LAB-v1.3.589.msi",
+          "offset": 16777216
+        },
+        {
+          "path": "transfer/chunks/msi-005.bin",
+          "bytes": 4194304,
+          "sha256": "df20179eb2e712be144ecf31ff559627cf8ce95f0fa410dae5481347675d5d9c",
+          "gitBlob": "4350e05ae44cc81685a0602980e8db4104ee6fe0",
+          "file": "CtrlOne-Setup-UNSIGNED-LAB-v1.3.589.msi",
+          "offset": 20971520
+        },
+        {
+          "path": "transfer/chunks/msi-006.bin",
+          "bytes": 4022272,
+          "sha256": "c785f60b123ff98332a46fa6860a94c774d838c20e98265b2dbb4f856a665da9",
+          "gitBlob": "849e7ea5c2e46cd367f4ff4a19c1d5915cb9eab4",
+          "file": "CtrlOne-Setup-UNSIGNED-LAB-v1.3.589.msi",
+          "offset": 25165824
+        }
+      ]
+    },
+    {
+      "path": "CtrlOne-Setup-UNSIGNED-LAB.exe",
+      "bytes": 38706176,
+      "sha256": "febe59f5f6619c9212949806d3753d502fc275738373b6a6cc2c807ca5a47d9e",
+      "gitBlob": "d4f2cf444d845fd2fb7fc482624a4799b94f3839",
+      "chunks": [
+        {
+          "path": "transfer/chunks/exe-000.bin",
+          "bytes": 4194304,
+          "sha256": "59106f5fbb7db3867a50c0f9f649c11d08915cc3d3f8bba078372be7e7b481fe",
+          "gitBlob": "9e1857c753fed46ffcaaaf3e1c86311b4bfaa756",
+          "file": "CtrlOne-Setup-UNSIGNED-LAB.exe",
+          "offset": 0
+        },
+        {
+          "path": "transfer/chunks/exe-001.bin",
+          "bytes": 4194304,
+          "sha256": "ee3d5b73aae172763d3e7ef90178eae2494b0f3f062b9cd696c14cfd4c2fe01f",
+          "gitBlob": "9a727e5e62bd2e954fe79f64676e4fb7968d95a2",
+          "file": "CtrlOne-Setup-UNSIGNED-LAB.exe",
+          "offset": 4194304
+        },
+        {
+          "path": "transfer/chunks/exe-002.bin",
+          "bytes": 4194304,
+          "sha256": "228a7becbc015138e24ea6beef4c90227dc652650f65584419514b3c0def1054",
+          "gitBlob": "d9f78f48264db1326c14fc9aa745fa9757c09ca9",
+          "file": "CtrlOne-Setup-UNSIGNED-LAB.exe",
+          "offset": 8388608
+        },
+        {
+          "path": "transfer/chunks/exe-003.bin",
+          "bytes": 4194304,
+          "sha256": "f91b62a6d1f08073dd1282d9f07518e2390984495bdf4172a2ae4cbe833c8cd7",
+          "gitBlob": "9208906d9dac6e3b7ec3a8cdc99874797d556522",
+          "file": "CtrlOne-Setup-UNSIGNED-LAB.exe",
+          "offset": 12582912
+        },
+        {
+          "path": "transfer/chunks/exe-004.bin",
+          "bytes": 4194304,
+          "sha256": "94543ff4308be74132c9fc034351f28849f3d23e260ffeea320ce5970769c457",
+          "gitBlob": "cd5a34cf1b14db72774cc56abe694c5e6bc73a54",
+          "file": "CtrlOne-Setup-UNSIGNED-LAB.exe",
+          "offset": 16777216
+        },
+        {
+          "path": "transfer/chunks/exe-005.bin",
+          "bytes": 4194304,
+          "sha256": "7025c28385768f69f45eeec828091aee65d8793034efbff110cfd3af77038c08",
+          "gitBlob": "ad88179d04c3a23d3a4fbec7c4e17c30d92c88f8",
+          "file": "CtrlOne-Setup-UNSIGNED-LAB.exe",
+          "offset": 20971520
+        },
+        {
+          "path": "transfer/chunks/exe-006.bin",
+          "bytes": 4194304,
+          "sha256": "4c2adbe45a5f5bfc17773b2eb9caa2276ada1019189e5b4006e2d78a208ad5a4",
+          "gitBlob": "8bad2c6b1b4c8f27cabbd4ea24acb18e5ebbdeeb",
+          "file": "CtrlOne-Setup-UNSIGNED-LAB.exe",
+          "offset": 25165824
+        },
+        {
+          "path": "transfer/chunks/exe-007.bin",
+          "bytes": 4194304,
+          "sha256": "187788db64c6d575d62dad73a7848195a27adcfb4d6fc1c81d3b45907f1129ea",
+          "gitBlob": "65284cc04c602772f61f4a3a6fdd268bc29d1b20",
+          "file": "CtrlOne-Setup-UNSIGNED-LAB.exe",
+          "offset": 29360128
+        },
+        {
+          "path": "transfer/chunks/exe-008.bin",
+          "bytes": 4194304,
+          "sha256": "e5871bcbea955fc7355a8436a5166eccc2ce6bd3c8397719cfc2a933da374717",
+          "gitBlob": "4de58642baa48fdf58d26e62e1dfddea630904bc",
+          "file": "CtrlOne-Setup-UNSIGNED-LAB.exe",
+          "offset": 33554432
+        },
+        {
+          "path": "transfer/chunks/exe-009.bin",
+          "bytes": 957440,
+          "sha256": "d195004948b1914eb813ccc7869797ac9f9084cc94c70d24e9ea03ba07121fcb",
+          "gitBlob": "7e805a6adbf3ee98250ada4838c0d4b71670c0b3",
+          "file": "CtrlOne-Setup-UNSIGNED-LAB.exe",
+          "offset": 37748736
+        }
+      ]
+    }
+  ],
+  "branch": "transfer/msi589-verified-bytes",
+  "readme": {
+    "path": "transfer/README.md",
+    "bytes": 6795,
+    "sha256": "5a307cafeb3162f738af1326f80cc3fb6476af6e780807d5d86b2843fc619ca2"
+  }
+}
