@@ -2,26 +2,29 @@
 
 Public test installers for CtrlOne Intelligence Ai+.
 
-## Latest explicit test update: 1.3.588
+## Latest explicit test update: 1.3.589
 
-- [Download test MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.588.msi)
-- [Download versioned test Setup EXE](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.588.exe)
+- [Download test MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.589.msi)
+- [Download versioned test Setup EXE](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.589.exe)
 - [Download current test Setup EXE](./CtrlOne-Setup-UNSIGNED-LAB.exe)
 - [SHA256 checksums](./SHA256SUMS.txt)
 
 These are **unsigned lab packages for testing**. Windows may ask for approval.
 
-This agent chooses an immutable wallpaper image using the current Windows desktop display: 1366x768 for smaller displays, otherwise 1920x1080 with Fill cropping. A fresh physical display probe and the selected session, user SID and logon identity remain pinned through download and application. Missing display evidence falls back to Full HD. Existing wallpaper enforcement and Desktop MSI download / Windows Installer handoff protections are retained.
+This build fixes MSI reader thread affinity, bounds verification before installer authorization to 90 seconds, and reports Downloading, Verifying and Opening Windows Installer separately. Status errors, observation timeouts and dialog dismissal retain the original request. Check status reconciles that request without another installer launch. A lost start acknowledgement remains uncertain rather than permitting a blind retry.
 
-The matching Admin Console/API accept images up to 5 MiB and optimize new uploads to both JPEG sizes. These are separate web-server changes; an MSI installation alone does not update a management server. The matching source has been deployed and upload-tested on Rossari.
+If an installed 1.3.587 updater remains stuck at Verifying the MSI, manually install the verified 1.3.589 MSI once to replace that running updater. The fix cannot change an already running older helper. Handle normal Windows approval prompts yourself.
 
-All ten applicable source CI workflows passed, with 21 successful jobs and one expected unrequested installer skip. Package source and emitted byte checks do not establish visible wallpaper pixels or a completed live upgrade. Test automatic display selection on the VMware PC after installing.
+All nine applicable source CI workflows passed, with 19 successful jobs and one expected unrequested installer skip. Actual package/source/compiled-byte checks passed. These checks do not establish the exact cause of the photographed VMware wait or a completed live upgrade; retest after installing the corrected service.
 
 Check for Update reads [latest-test.json](./latest-test.json). A newer test build offers an explicit download and install action using commit-pinned MSI bytes. Windows attachment security, antivirus, SmartScreen and administrator approval remain active. The signed SYSTEM/daily customer updater is separate; this catalog does not authorize unattended unsigned customer updates.
 
-Build source: `13717519336189a94a9d2baf895de226f30065fc` ([source fix](https://github.com/uquicktechnologies-spec/CtrlOne_Final/pull/119)).
+Build source: `68a56c3ca87e6c1cca7dd0dbd6e2c8e53a9797eb` ([source fix](https://github.com/uquicktechnologies-spec/CtrlOne_Final/pull/120)). Existing wallpaper display selection, upload compatibility, enrollment and file/handoff protections are retained.
 
 ## Previous manual tests
+
+- 1.3.588: [MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.588.msi), [versioned Setup EXE](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.588.exe), [original checksums](https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/6a79ae0476a33db705a94000c1fc233cd0b05991/SHA256SUMS.txt).
+
 
 - 1.3.587: [MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.587.msi), [versioned Setup EXE](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.587.exe), [original checksums](https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/890b5fca14717e811ed8dc1c0c2fb517806e8ab3/SHA256SUMS.txt).
 
