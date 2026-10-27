@@ -2,26 +2,27 @@
 
 Public test installers for CtrlOne Intelligence Ai+.
 
-## Latest explicit test update: 1.3.589
+## Latest explicit test update: 1.3.590
 
-- [Download test MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.589.msi)
-- [Download versioned test Setup EXE](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.589.exe)
+- [Download test MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.590.msi)
+- [Download versioned test Setup EXE](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.590.exe)
 - [Download current test Setup EXE](./CtrlOne-Setup-UNSIGNED-LAB.exe)
 - [SHA256 checksums](./SHA256SUMS.txt)
 
 These are **unsigned lab packages for testing**. Windows may ask for approval.
 
-This build fixes MSI reader thread affinity, bounds verification before installer authorization to 90 seconds, and reports Downloading, Verifying and Opening Windows Installer separately. Status errors, observation timeouts and dialog dismissal retain the original request. Check status reconciles that request without another installer launch. A lost start acknowledgement remains uncertain rather than permitting a blind retry.
+This build isolates persisted restriction command revisions by management server, device and company binding so a command number from a previous server cannot falsely supersede a current ON or OFF request. Current-server revision ordering, ownership restoration and directional readback remain required. It also contains the reviewed capture/event and console error-reporting changes in the source commit below.
 
-If an installed 1.3.587 updater remains stuck at Verifying the MSI, manually install the verified 1.3.589 MSI once to replace that running updater. The fix cannot change an already running older helper. Handle normal Windows approval prompts yourself.
+Check for Update reads [latest-test.json](./latest-test.json). A newer test build offers an explicit download and install action using commit-pinned MSI bytes. Windows attachment security, antivirus, SmartScreen and administrator approval remain active. The signed SYSTEM/daily customer updater is separate; this test catalog does not authorize unattended unsigned customer updates.
 
-All nine applicable source CI workflows passed, with 19 successful jobs and one expected unrequested installer skip. Actual package/source/compiled-byte checks passed. These checks do not establish the exact cause of the photographed VMware wait or a completed live upgrade; retest after installing the corrected service.
+Package/source byte checks do not establish successful installation, upgrade, uninstall, or live ON/OFF enforcement on a managed PC. Those runtime results require separate observation after installation. No claim that all controls are error free is made by this test catalog.
 
-Check for Update reads [latest-test.json](./latest-test.json). A newer test build offers an explicit download and install action using commit-pinned MSI bytes. Windows attachment security, antivirus, SmartScreen and administrator approval remain active. The signed SYSTEM/daily customer updater is separate; this catalog does not authorize unattended unsigned customer updates.
-
-Build source: `68a56c3ca87e6c1cca7dd0dbd6e2c8e53a9797eb` ([source fix](https://github.com/uquicktechnologies-spec/CtrlOne_Final/pull/120)). Existing wallpaper display selection, upload compatibility, enrollment and file/handoff protections are retained.
+Build source: `0a8435d6091e2b23a631b3488a8e5d4686ba9718`.
 
 ## Previous manual tests
+
+- 1.3.589: [MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.589.msi), [versioned Setup EXE](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.589.exe), [original checksums](https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/be744eacedec5c0d82b958b3546810660ece8ccf/SHA256SUMS.txt).
+
 
 - 1.3.588: [MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.588.msi), [versioned Setup EXE](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.588.exe), [original checksums](https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/6a79ae0476a33db705a94000c1fc233cd0b05991/SHA256SUMS.txt).
 
