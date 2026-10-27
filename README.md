@@ -2,24 +2,29 @@
 
 Public test installers for CtrlOne Intelligence Ai+.
 
-## Latest explicit test update: 1.3.587
+## Latest explicit test update: 1.3.588
 
-- [Download test MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.587.msi)
-- [Download versioned test Setup EXE](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.587.exe)
+- [Download test MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.588.msi)
+- [Download versioned test Setup EXE](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.588.exe)
 - [Download current test Setup EXE](./CtrlOne-Setup-UNSIGNED-LAB.exe)
 - [SHA256 checksums](./SHA256SUMS.txt)
 
 These are **unsigned lab packages for testing**. Windows may ask for approval.
 
-This build fixes false wallpaper “Applied” confirmations from an old registry path. A fresh user-session operation must finish successfully, retain the same selected logon, and pass image-policy checks. Recognized prior deployment image policies are prepared before applying the new image. Independent restrictions and foreign wallpaper policies remain protected. The source also includes the Admin Console authentication fix; that change requires a separate server deployment. The installer retains verified Desktop MSI download and Windows Installer handoff.
+This agent chooses an immutable wallpaper image using the current Windows desktop display: 1366x768 for smaller displays, otherwise 1920x1080 with Fill cropping. A fresh physical display probe and the selected session, user SID and logon identity remain pinned through download and application. Missing display evidence falls back to Full HD. Existing wallpaper enforcement and Desktop MSI download / Windows Installer handoff protections are retained.
 
-All eight applicable source CI workflows passed, including the new wallpaper regression groups and six server wallpaper contracts. Package byte checks do not establish rendered desktop pixels or a completed live upgrade. Retest wallpaper deployment on the VMware PC after installing.
+The matching Admin Console/API accept images up to 5 MiB and optimize new uploads to both JPEG sizes. These are separate web-server changes; an MSI installation alone does not update a management server. The matching source has been deployed and upload-tested on Rossari.
+
+All ten applicable source CI workflows passed, with 21 successful jobs and one expected unrequested installer skip. Package source and emitted byte checks do not establish visible wallpaper pixels or a completed live upgrade. Test automatic display selection on the VMware PC after installing.
 
 Check for Update reads [latest-test.json](./latest-test.json). A newer test build offers an explicit download and install action using commit-pinned MSI bytes. Windows attachment security, antivirus, SmartScreen and administrator approval remain active. The signed SYSTEM/daily customer updater is separate; this catalog does not authorize unattended unsigned customer updates.
 
-Build source: `bfcf67aad1c59effa37cc0e8b36bc16856556a76` ([source fix](https://github.com/uquicktechnologies-spec/CtrlOne_Final/pull/113)).
+Build source: `13717519336189a94a9d2baf895de226f30065fc` ([source fix](https://github.com/uquicktechnologies-spec/CtrlOne_Final/pull/119)).
 
 ## Previous manual tests
+
+- 1.3.587: [MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.587.msi), [versioned Setup EXE](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.587.exe), [original checksums](https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/890b5fca14717e811ed8dc1c0c2fb517806e8ab3/SHA256SUMS.txt).
+
 
 - 1.3.586: [MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.586.msi), [versioned Setup EXE](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.586.exe), [original checksums](https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/b305f3ba96459b0f5670da0e60fdd846c4627068/SHA256SUMS.txt).
 
