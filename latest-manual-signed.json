@@ -4,8 +4,8 @@
   "kind": "signed-manual-download-pointer",
   "manualOnly": true,
   "automaticUpdateFeed": false,
-  "version": "1.3.592",
-  "catalogCommit": "c10390195cd51b2d255c4359fba244909dc4406c",
-  "catalogSha256": "2b779139d2d2efc563d35a1decddacf91c6915b5455201f5a76120df78649974",
+  "version": "1.3.593",
+  "catalogCommit": "2960173524dd86398ee303c8de180eeabc8f1f9d",
+  "catalogSha256": "1d32cd9185738c2b39ba4db27bbe485702f5c555ab23943fe8daba7099771abc",
   "catalogSizeBytes": 1712
 }
