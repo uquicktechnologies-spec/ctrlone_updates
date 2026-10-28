@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "product": "CtrlOne Intelligence Ai+",
+  "version": "1.3.592",
+  "kind": "signed-installer-artifact-catalog",
+  "automaticUpdateFeed": false,
+  "sourceCommit": "89bf622a63af53c83b1b4206500443c3ab9912a7",
+  "sourceTree": "5ba05e4874e1b0987e3c1441620a4232aa64d91b",
+  "reviewedHead": "73bf4180ad80f93e16cbdd5ed03232cd7cd6fd5e",
+  "artifactCommit": "44fffb707d83636fb1d3057c608cf73f97aca497",
+  "packageQASha256": "0797b721e2daa91af13296eaecf4a2b44f6be1e8e9408a15e36a52eab8aa3d28",
+  "signaturesSha256": "98d59e244186402dcc73bee9f9a340be43e44c1070e27e38952853a59d94b085",
+  "sourceAdmissionSha256": "22ca9f915b495809645811f16a773425ea5460a2b63b6cb3d095a50c9e25c475",
+  "publisher": "UQuick Technologies India Limited",
+  "certificateThumbprint": "D42CAA418BFE1A1B402577DC8D7C34E80BB4DE8A",
+  "publisherAndTimestampVerified": true,
+  "runtimeAndUpgradeAcceptance": "NOT_RUN",
+  "releaseAccepted": false,
+  "files": [
+    {
+      "name": "CtrlOne-Setup-v1.3.592.msi",
+      "url": "https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/44fffb707d83636fb1d3057c608cf73f97aca497/CtrlOne-Setup-v1.3.592.msi",
+      "bytes": 29327360,
+      "sha256": "68493ce6f103923621d8ce3b0f881f45db02c44b97a396ccfb17ac439ab44523",
+      "gitBlob": "2ce79c9e8ee0440c8ae57c8dbcc9c901287c2e4e"
+    },
+    {
+      "name": "CtrlOne-Setup-v1.3.592.exe",
+      "url": "https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/44fffb707d83636fb1d3057c608cf73f97aca497/CtrlOne-Setup-v1.3.592.exe",
+      "bytes": 38802944,
+      "sha256": "ff91630732cc26a924a22c1d96f5ec8ade3f7a72c7887a98e3cf57968848b642",
+      "gitBlob": "71669c935a249203fd9d7aeba25030d5e46d8ed5"
+    }
+  ]
+}
