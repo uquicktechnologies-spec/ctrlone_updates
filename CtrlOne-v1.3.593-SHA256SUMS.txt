@@ -1,0 +1,2 @@
+9b4228ba8fae1c354fd1fbb2e3ae6431007a381d6fe83ff0c5026bad56164bc4  CtrlOne-Setup-v1.3.593.msi
+4cefb7c7fc4042ea5b9ea7b49c308703967084d7677fbde6e57ced8bce843471  CtrlOne-Setup-v1.3.593.exe
