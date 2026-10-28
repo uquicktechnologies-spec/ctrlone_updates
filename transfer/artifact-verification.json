@@ -1,0 +1,49 @@
+{
+  "status": "PASS_PUBLIC_SIGNED_592_IMMUTABLE_ARTIFACT_BYTES_ONLY",
+  "artifactCommit": "44fffb707d83636fb1d3057c608cf73f97aca497",
+  "catalogCommit": "c10390195cd51b2d255c4359fba244909dc4406c",
+  "sourceCommit": "89bf622a63af53c83b1b4206500443c3ab9912a7",
+  "sourceTree": "5ba05e4874e1b0987e3c1441620a4232aa64d91b",
+  "packageQASha256": "0797b721e2daa91af13296eaecf4a2b44f6be1e8e9408a15e36a52eab8aa3d28",
+  "signaturesSha256": "98d59e244186402dcc73bee9f9a340be43e44c1070e27e38952853a59d94b085",
+  "sourceAdmissionSha256": "22ca9f915b495809645811f16a773425ea5460a2b63b6cb3d095a50c9e25c475",
+  "metadata": [
+    {
+      "url": "https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/c10390195cd51b2d255c4359fba244909dc4406c/CtrlOne-v1.3.592-README.md",
+      "bytes": 1244,
+      "sha256": "329f64cf4ef45df9b21b4007848edad9b777f10c818dfdf0c48787d4f06e3b47",
+      "gitBlob": "9a3cf108589c6ac32f707f3e82ae19203ef366d2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/c10390195cd51b2d255c4359fba244909dc4406c/CtrlOne-v1.3.592-SHA256SUMS.txt",
+      "bytes": 186,
+      "sha256": "fc49d1687e7656e5385554becfd131b810883a57c21fe73b1296e0744ee2c342",
+      "gitBlob": "4085ff9df13c6addf7b6585b45f6a21bd79af8ee"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/c10390195cd51b2d255c4359fba244909dc4406c/CtrlOne-v1.3.592-artifacts.json",
+      "bytes": 1712,
+      "sha256": "2b779139d2d2efc563d35a1decddacf91c6915b5455201f5a76120df78649974",
+      "gitBlob": "6042ec23d28575c438a370fe16414e773434ebab"
+    }
+  ],
+  "downloads": [
+    {
+      "url": "https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/44fffb707d83636fb1d3057c608cf73f97aca497/CtrlOne-Setup-v1.3.592.msi",
+      "bytes": 29327360,
+      "sha256": "68493ce6f103923621d8ce3b0f881f45db02c44b97a396ccfb17ac439ab44523",
+      "gitBlob": "2ce79c9e8ee0440c8ae57c8dbcc9c901287c2e4e"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/44fffb707d83636fb1d3057c608cf73f97aca497/CtrlOne-Setup-v1.3.592.exe",
+      "bytes": 38802944,
+      "sha256": "ff91630732cc26a924a22c1d96f5ec8ade3f7a72c7887a98e3cf57968848b642",
+      "gitBlob": "71669c935a249203fd9d7aeba25030d5e46d8ed5"
+    }
+  ],
+  "method": "Complete non-overlapping strict206/Content-Range reads; whole-file SHA256 and Git blob SHA1",
+  "installerExecuted": false,
+  "feedsReadOrChanged": false,
+  "runtimeAndUpgradeAcceptance": "NOT_RUN",
+  "customerAutomaticUpdatePublished": false
+}

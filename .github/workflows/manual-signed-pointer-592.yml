@@ -1,0 +1,31 @@
+name: Publish reviewed CtrlOne signed manual download pointer only
+
+on:
+  push:
+    branches: [transfer/manual-signed592-reviewed-pointer]
+
+permissions: {}
+
+concurrency:
+  group: ctrlone-reviewed-installer-artifact-publication
+  cancel-in-progress: false
+
+jobs:
+  pointer:
+    if: github.repository == 'uquicktechnologies-spec/ctrlone_updates' && github.ref == 'refs/heads/transfer/manual-signed592-reviewed-pointer' && github.event.deleted == false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+          persist-credentials: false
+          lfs: false
+          submodules: false
+      - name: Verify complete public artifact evidence and change only manual pointer
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 transfer/manual-signed-pointer-592.py publish
