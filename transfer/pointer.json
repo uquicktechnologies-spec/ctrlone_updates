@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "product": "CtrlOne Intelligence Ai+",
+  "kind": "signed-manual-download-pointer",
+  "manualOnly": true,
+  "automaticUpdateFeed": false,
+  "version": "1.3.593",
+  "catalogCommit": "2960173524dd86398ee303c8de180eeabc8f1f9d",
+  "catalogSha256": "1d32cd9185738c2b39ba4db27bbe485702f5c555ab23943fe8daba7099771abc",
+  "catalogSizeBytes": 1712
+}
