@@ -2,24 +2,26 @@
 
 Public test installers for CtrlOne Intelligence Ai+.
 
-## Latest explicit test update: 1.3.590
+## Latest explicit test update: 1.3.769
 
-- [Download test MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.590.msi)
-- [Download versioned test Setup EXE](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.590.exe)
+- [Download test MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.769.msi)
+- [Download versioned test Setup EXE](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.769.exe)
 - [Download current test Setup EXE](./CtrlOne-Setup-UNSIGNED-LAB.exe)
 - [SHA256 checksums](./SHA256SUMS.txt)
 
-These are **unsigned lab packages for testing**. Windows may ask for approval.
+These are **unsigned lab packages**. The identical 1.3.769 MSI is approved in the Unsigned channel at https://ctrlone.rossarimail.com/admin-console/releases.
 
-This build isolates persisted restriction command revisions by management server, device and company binding so a command number from a previous server cannot falsely supersede a current ON or OFF request. Current-server revision ordering, ownership restoration and directional readback remain required. It also contains the reviewed capture/event and console error-reporting changes in the source commit below.
+This compatibility catalog enables older lab Agents, including 1.3.590, to discover 1.3.769 through **Check for Update**. Choose **Download and install** to begin the existing manual MSI flow. Windows attachment security and administrator approval remain active. This catalog does not authorize unattended installation.
 
-Check for Update reads [latest-test.json](./latest-test.json). A newer test build offers an explicit download and install action using commit-pinned MSI bytes. Windows attachment security, antivirus, SmartScreen and administrator approval remain active. The signed SYSTEM/daily customer updater is separate; this test catalog does not authorize unattended unsigned customer updates.
+Version 1.3.769 preserves Overview, hardware and automatic background warranty changes and adds the approved Unsigned update protocol for enrolled customer PCs. After this upgrade, newer approved Unsigned packages can be offered through the enrolled server. Installation still requires an explicit Install action and does not force a restart.
 
-Package/source byte checks do not establish successful installation, upgrade, uninstall, or live ON/OFF enforcement on a managed PC. Those runtime results require separate observation after installation. No claim that all controls are error free is made by this test catalog.
+The original 1.3.590 discovery and read-only MSI admission code accepted this catalog and the exact MSI. Both public commit-pinned packages were downloaded and matched their SHA256 and size. Successful discovery and package validation do not establish that a customer PC has completed installation; confirm its subsequent Agent version separately.
 
-Build source: `0a8435d6091e2b23a631b3488a8e5d4686ba9718`.
+Build source: `5d114794dd2054a656c371051e831489521ef80e`.
 
 ## Previous manual tests
+
+- 1.3.590: [MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.590.msi), [versioned Setup EXE](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.590.exe), [original catalog](https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/2dcbf0d5fb1d923665ae33858c33e952ef848f5a/latest-test.json).
 
 - 1.3.589: [MSI](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.589.msi), [versioned Setup EXE](./CtrlOne-Setup-UNSIGNED-LAB-v1.3.589.exe), [original checksums](https://raw.githubusercontent.com/uquicktechnologies-spec/ctrlone_updates/be744eacedec5c0d82b958b3546810660ece8ccf/SHA256SUMS.txt).
 
